@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="766.0" prefWidth="1125.0" style="-fx-background-color: #edf2fb;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.OrdersController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="284.0" layoutX="140.0" layoutY="41.0" stroke="BLACK" strokeType="INSIDE" width="852.0" />
+        <Text fill="#0000007d" layoutX="446.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Orders Manage" wrappingWidth="294.13673210144043">
+            <font>
+                <Font name="Cambria Bold" size="33.0" />
+            </font>
+        </Text>
+        <Button fx:id="btnUpdate" layoutX="463.0" layoutY="263.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #0466c8; -fx-background-radius: 20;" text="Update" textFill="WHITE" />
+        <Button fx:id="btnDelete" layoutX="586.0" layoutY="262.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #0466c8; -fx-background-radius: 20;" text="Delete" textFill="#fffdfd" />
+        <Button fx:id="btnSave" layoutX="338.0" layoutY="264.0" mnemonicParsing="false" onAction="#btnSaveOnAction" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #0466c8; -fx-background-radius: 20;" text="Save" textFill="WHITE" />
+        <Button fx:id="btnClear" layoutX="708.0" layoutY="263.0" mnemonicParsing="false" onAction="#btnClearOnAction" prefHeight="29.0" prefWidth="78.0" style="-fx-background-color: #0466c8; -fx-background-radius: 20;" text="Clear" textFill="#fffefe" />
+        <TextField fx:id="txtOrderId" editable="false" layoutX="190.0" layoutY="139.0" onAction="#txtSearchOnAction" prefHeight="28.0" prefWidth="210.0" />
+        <TextField fx:id="txtCustomerId" layoutX="324.0" layoutY="208.0" prefHeight="28.0" prefWidth="210.0" />
+        <TextField fx:id="txtEventCode" layoutX="599.0" layoutY="208.0" prefHeight="28.0" prefWidth="210.0" />
+        <Text layoutX="191.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order Id:" />
+        <Text layoutX="599.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Code:" />
+        <Text layoutX="324.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Id:" />
+        <TableView fx:id="tblOrder" layoutX="81.0" layoutY="367.0" prefHeight="360.0" prefWidth="965.0">
+            <columns>
+                <TableColumn fx:id="colO_id" prefWidth="165.0" text="O_id" />
+                <TableColumn fx:id="colQty" prefWidth="172.0" text="Qty" />
+                <TableColumn fx:id="colStatus" prefWidth="225.33331298828125" text="Status" />
+                <TableColumn fx:id="colC_id" prefWidth="219.66668701171875" text="C_id" />
+                <TableColumn fx:id="colE_code" prefWidth="183.66665649414062" text="E_code" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtOrderQty" layoutX="458.0" layoutY="139.0" prefHeight="28.0" prefWidth="210.0" />
+        <Text layoutX="458.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Order qty:" />
+        <TextField fx:id="txtStatus" layoutX="720.0" layoutY="139.0" prefHeight="28.0" prefWidth="210.0" />
+        <Text layoutX="720.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:" />
+    </children>
+</AnchorPane>

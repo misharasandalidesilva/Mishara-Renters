@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="nodePane" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #0466c8;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.DashboardController">
+   <children>
+      <AnchorPane fx:id="Load" layoutX="311.0" layoutY="1.0" prefHeight="766.0" prefWidth="1125.0" style="-fx-background-color: #edf2fb; -fx-border-radius: 20;">
+         <children>
+            <Text layoutX="395.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard" wrappingWidth="244.0">
+               <font>
+                  <Font name="Candara Bold" size="51.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8e9dab" height="136.0" layoutX="62.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="233.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8e9dab" height="136.0" layoutX="433.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="233.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8e9dab" height="136.0" layoutX="808.0" layoutY="150.0" stroke="BLACK" strokeType="INSIDE" width="233.0" />
+            <Text layoutX="85.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Customers">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="479.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Orders">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text layoutX="831.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Employees">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="427.0" fitWidth="1064.0" layoutX="38.0" layoutY="315.0">
+               <image>
+                  <Image url="@../assests.icons/new%20bar%20chart.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="100.0" layoutY="674.0" mnemonicParsing="false" onAction="#logoutOnAction" prefHeight="44.0" prefWidth="102.0" style="-fx-background-color: #edf2fb; -fx-background-radius: 20;" text="Logout">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <VBox layoutX="37.0" layoutY="114.0" prefHeight="520.0" prefWidth="227.0" style="-fx-background-color: #0466C8;">
+         <children>
+            <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnCustomerOnAction" prefHeight="60.0" prefWidth="260.0" style="-fx-background-color: #0466C8;" text="Customer" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnEmployeeOnAction" prefHeight="60.0" prefWidth="260.0" style="-fx-background-color: #0466C8;" text="Employee" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnEventOnAction" prefHeight="60.0" prefWidth="260.0" style="-fx-background-color: #0466C8;" text="Event" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnOrderOnAction" prefHeight="60.0" prefWidth="260.0" style="-fx-background-color: #0466C8;" text="Orders" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnEquipmentOnAction" prefHeight="60.0" prefWidth="260.0" style="-fx-background-color: #0466C8;" text="Equipment" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnFoodOnAction" prefHeight="60.0" prefWidth="260.0" style="-fx-background-color: #0466C8;" text="Food" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnMenuOnAction" prefHeight="60.0" prefWidth="260.0" style="-fx-background-color: #0466C8;" text="Menu" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnVehicleOnAction" prefHeight="60.0" prefWidth="260.0" style="-fx-background-color: #0466C8;" text="Vehicle" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#btnPaymentOnAction" prefHeight="60.0" prefWidth="260.0" style="-fx-background-color: #0466C8;" text="Payment" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="104.0" fitWidth="112.0" layoutX="97.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests.icons/logo.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
