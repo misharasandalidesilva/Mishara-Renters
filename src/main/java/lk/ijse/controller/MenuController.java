@@ -1,5 +1,6 @@
 package lk.ijse.controller;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -62,13 +63,13 @@ public class MenuController {
     private TextField txtFoodId;
 
     @FXML
-    private TextField txtMenuCode;
+    private JFXTextField txtMenuCode;
 
     @FXML
-    private TextField txtMenuName;
+    private JFXTextField txtMenuName;
 
     @FXML
-    private TextField txtOrderId;
+    private JFXTextField txtOrderId;
 
     private List<Menu> MenuList = new ArrayList<>();
 
@@ -92,7 +93,7 @@ public class MenuController {
         setCellValueFactory();
         loadMenutable();
         showSelectedUserDetails();
-        loadNextMenuCode();
+        new JFXTextField();
     }
 
     private void loadNextMenuCode() {

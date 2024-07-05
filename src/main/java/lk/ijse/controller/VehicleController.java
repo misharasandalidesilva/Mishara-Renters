@@ -1,5 +1,6 @@
 package lk.ijse.controller;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -45,10 +46,10 @@ public class VehicleController {
     private TableView<VehicleTm> tblVehicle;
 
     @FXML
-    private TextField txtVehicleId;
+    private JFXTextField txtVehicleId;
 
     @FXML
-    private TextField txtVehicleName;
+    private JFXTextField txtVehicleName;
     private List<Vehicle> vehicleList;
 
     @FXML

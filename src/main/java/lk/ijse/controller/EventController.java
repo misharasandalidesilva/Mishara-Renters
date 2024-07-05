@@ -1,5 +1,6 @@
 package lk.ijse.controller;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -54,13 +55,13 @@ public class EventController {
     private TableView<EventTm> tblEvent;
 
     @FXML
-    private TextField txtDescription;
+    private JFXTextField txtDescription;
 
     @FXML
-    private TextField txtEventCode;
+    private JFXTextField txtEventCode;
 
     @FXML
-    private TextField txtEventType;
+    private JFXTextField txtEventType;
     private List<Event> eventList = new ArrayList<>();
 
     public void initialize() throws SQLException {

@@ -1,5 +1,6 @@
 package lk.ijse.controller;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -23,6 +24,7 @@ import static java.awt.SystemColor.menu;
 
 public class OrdersController {
 
+    public JFXTextField txtCustomerId;
     @FXML
     private Button btnClear;
 
@@ -56,20 +58,19 @@ public class OrdersController {
     @FXML
     private TableView<OrdersTm> tblOrder;
 
-    @FXML
-    private TextField txtCustomerId;
+
 
     @FXML
-    private TextField txtEventCode;
+    private JFXTextField txtEventCode;
 
     @FXML
-    private TextField txtOrderId;
+    private JFXTextField txtOrderId;
 
     @FXML
-    private TextField txtOrderQty;
+    private JFXTextField txtOrderQty;
 
     @FXML
-    private TextField txtStatus;
+    private JFXTextField txtStatus;
     private List<Orders> orderList;
 
     @FXML

@@ -1,5 +1,6 @@
 package lk.ijse.controller;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PaymentController {
+    public JFXTextField txtDate;
     @FXML
     private Button btnClear;
 
@@ -51,17 +53,16 @@ public class PaymentController {
     @FXML
     private TableView<PaymentTm> tblpayment;
 
-    @FXML
-    private TextField txtDate;
+
 
     @FXML
-    private TextField txtDescription;
+    private JFXTextField txtDescription;
 
     @FXML
-    private TextField txtOrderId;
+    private JFXTextField txtOrderId;
 
     @FXML
-    private TextField txtPaymentId;
+    private JFXTextField txtPaymentId;
     private List<Payment> PaymentList = new ArrayList<>();
 
     public void initialize() throws SQLException {

@@ -1,5 +1,6 @@
 package lk.ijse.controller;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -52,13 +53,13 @@ public class EquipmentController {
     private TableView<EquipmentTm> tblEquipment;
 
     @FXML
-    private TextField txtEquipmentId;
+    private JFXTextField txtEquipmentId;
 
     @FXML
-    private TextField txtEquipmentName;
+    private JFXTextField txtEquipmentName;
 
     @FXML
-    private TextField txtEquipmentQty;
+    private JFXTextField txtEquipmentQty;
 
 
 

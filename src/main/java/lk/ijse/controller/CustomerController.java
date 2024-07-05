@@ -1,5 +1,6 @@
 package lk.ijse.controller;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -52,16 +53,16 @@ public class CustomerController {
         private TableView<CustomerTm> tblCustomer;
 
         @FXML
-        private TextField txtAddress;
+        private JFXTextField txtAddress;
 
         @FXML
-        private TextField txtContactNumber;
+        private JFXTextField txtContactNumber;
 
         @FXML
-        private TextField txtCustomerId;
+        private JFXTextField txtCustomerId;
 
         @FXML
-        private TextField txtCustomerName;
+        private JFXTextField txtCustomerName;
 
 
     private List<Customer> customerList = new ArrayList<>();

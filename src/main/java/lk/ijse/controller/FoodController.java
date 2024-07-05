@@ -1,5 +1,6 @@
 package lk.ijse.controller;
 
+import com.jfoenix.controls.JFXTextField;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -50,13 +51,13 @@ public class FoodController {
     private TableView<FoodTm> tblFood;
 
     @FXML
-    private TextField txtDescription;
+    private JFXTextField txtDescription;
 
     @FXML
-    private TextField txtFoodQty;
+    private JFXTextField txtFoodQty;
 
     @FXML
-    private TextField txtfoodId;
+    private JFXTextField txtfoodId;
 
     private List<Food> foodList = new ArrayList<>();
 
